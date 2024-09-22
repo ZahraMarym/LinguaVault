@@ -1,0 +1,144 @@
+body{
+  background-color: rgb(21, 4, 82);
+
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(21, 4, 82);
+  color: #fff; /* Set text color to white for better contrast */
+  font-family: Arial, sans-serif; /* Set a clean font */
+  position: relative; /* Ensure buttons-container can be positioned absolutely */
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.drag-and-drop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px; /* Add space between the columns */
+}
+
+.transcription-and-translation {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.matching-audios {
+  border-right: 2px solid #444; /* Border between the two sections */
+}
+
+.logout-button {
+  background-color: #ffffff; /* Bright color for visibility */
+  color: #2f24b1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-record-button {
+  background-color: #2f24b1; /* Bright color for visibility */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover, .add-record-button:hover {
+  background-color: #2d3ab7;
+  color: #fff;
+}
+
+.buttons-container {
+  position: absolute;
+  top: 30px;
+  right: 30px; /* Adjust to fit the layout */
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  z-index: 10; /* Ensure buttons appear above other content */
+}
+
+.buttons-container button {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .matching-audios, .transcription-and-translation {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .buttons-container {
+    right: 10px; /* Adjust for smaller screens */
+    top: 10px;
+    gap: 10px; /* Reduce space between buttons */
+  }
+
+  .header h1 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .header h1 {
+    font-size: 18px; /* Further reduce font size */
+  }
+
+  .buttons-container {
+    flex-direction: column;
+    top: 10px; /* Adjust for very small screens */
+    right: 10px;
+    gap: 5px; /* Reduce space between buttons */
+  }
+
+  .logout-button, .add-record-button {
+    padding: 8px 16px; /* Adjust button size */
+    font-size: 14px; /* Adjust font size */
+  }
+}

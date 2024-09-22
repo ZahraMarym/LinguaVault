@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.backgroundimage img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio of the image */
+  border-radius: 10px;
+  object-fit: cover; /* Better fit for the background image */
+}
+
+.text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px 30px; /* Adjusted padding for better responsiveness */
+  background: rgba(60, 60, 60, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border-bottom: 2px solid white;
+  height: auto; /* Allow height to adjust based on content */
+  max-width: calc(100% - 20px); /* Ensure text background stays within the header */
+  box-sizing: border-box;
+  width: 83%; /* Allow width to adjust based on content */
+}
+
+@media (max-width: 1024px) {
+  .text {
+    font-size: 2.5rem; /* Resize text for larger tablets and smaller desktops */
+    padding: 15px 25px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5rem; /* Resize text on tablets and smaller screens */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1.2rem; /* Further resize text for mobile devices */
+    padding: 8px 15px; /* Adjust padding */
+    top: 5px; /* Adjust positioning for small screens */
+    left: 5px;
+  }
+}

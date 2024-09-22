@@ -1,0 +1,101 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    transition: background 0.5s ease-in-out;
+}
+
+.LoginContainer{
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10%;
+    transition: transform 0.9s ease-in-out;
+    border: 3px solid rgb(55, 117, 197);
+    width: 400px;
+}
+
+
+
+.signin-form:hover {
+    transform: scale(1.05);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.signin-button {
+    width: 100%;
+    background-color: #032c5b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.signin-button:hover {
+    background-color: #0056b3;
+}
+.switch-button{
+    background-color: white;
+    color: #032c5b;
+    border: 2px solid #032c5b;
+}
+.switch-button:hover{
+    background-color: #032c5b;
+    color: white;
+}
+.switch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

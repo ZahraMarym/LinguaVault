@@ -1,0 +1,109 @@
+/* AddRecordModal.css */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is on top of other content */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1001; /* Ensure it is on top of the overlay */
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: #003972; /* Blue theme for the title */
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #003d79;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px 16px; /* Increase padding for height */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group input:focus {
+    border-color: #04478a;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.3);
+    outline: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px 16px; /* Increase padding for height */
+    background-color: #00386f; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(30, 144, 255, 0.2);
+  }
+  
+  .submit-button:hover {
+    background-color: #146bc3; /* Darker blue on hover */
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #00356a;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  
+  .close-button:hover {
+    color: #001224; /* Darker blue on hover */
+  }
+  .audio-preview-container {
+    margin-top: 10px;
+    max-height: 100px; 
+    overflow-y: auto;  
+    background-color: #f9f9f9; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .audio-preview {
+    padding: 5px 0;
+    color: #333;
+  }  

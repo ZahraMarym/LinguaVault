@@ -1,0 +1,73 @@
+.person-detail {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a2a52; /* Dark blue background */
+    color: white; /* Text color */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-image img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .person-info {
+    text-align: center;
+    margin-top: -50px;
+    padding-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .voice-links-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .voice-links-table th,
+  .voice-links-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .voice-links-table th {
+    background-color: #2a3172;
+    color: white;
+  }
+  
+  .voice-links-table td a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .voice-links-table td a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .person-detail {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
